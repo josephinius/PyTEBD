@@ -608,10 +608,10 @@ class NISHINO(object):
 
         # A complete example use:
 
-        import nishino_correct
-        mps = nishino_correct.NISHINO('Wire', 28, 40, 40, 1., 10., 'imaginary', 2, '1575631675')
+        import nishino
+        mps = nishino.NISHINO('Wire', 28, 40, 40, 1., 10., 'imaginary', 2, '1575631675')
         # or
-        mps = nishino_correct.NISHINO('Wire', 24, 16, 16, 1., 10., 'imaginary', 2, '1575631675')
+        mps = nishino.NISHINO('Wire', 24, 16, 16, 1., 10., 'imaginary', 2, '1575631675')
         # '1575631675' - is the iTEBD GS initialization for the Wire model I am currently testing
         mps.find_ground_state(True)
 
